@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <title>Resume</title>
+</head>
+<body>
+    <header class='main-section'>
+        <div class='main-box'>
+            <section class='hero'>
+                <h1 class='name'>John Shodipo</h1>
+                <p class='title'>Backend Developer</p>
+
+                <div class='hero-content'>
+                    <p>Email: newtonjohn043@gmail.com</p>
+                    <p>Phone: (+234) 09034727466</p>
+                    <p>Lagos, Nigeria.</p>
+                    <span>
+                        <a href='https://github.com/Johnkayode' target="_blank">GitHub</a>
+                        <a href='https://twitter.com/nerdthejohn' target="_blank">Twitter</a>
+                        <a href='https://www.linkedin.com/in/john-shodipo-4267b3197' target="_blank">LinkedIn</a>
+                    </span>
+                </div>
+            </section>
+
+            <section class='about'>
+                <h1 class='name'>About</h1>
+
+                <div>
+                    <p class='about-text'>
+                        I am a self-taught Software engineer<br> 
+                        with passion for building amazing and<br>
+                        scalable applications
+                        for the web with Python,<br> 
+                        Javascript and Wordpress.
+                    </p>
+                </div>
+            </section>
+
+            <section class='skills'>
+                <h1 class='name'>Skills</h1>
+                <ul class='list-unstyled'>
+                    <li>Django</li>
+                    <li>VueJS</li>
+                    <li>Node JS</li>
+                    <li>Wordpress</li>
+                </ul>
+            </section>
+
+            <section class='projects'>
+                <h1 class='name'>Projects</h1>
+                <ul class='list-unstyled-2'>
+                    <li>
+                        <a href='https://t.me/jambito_bot' target="_blank">Jambyte</a>
+                        <p>
+                            Jambyte is a quiz telegram bot <br>
+                            that helps in preparation for the Unified Tertiary Matriculation Exams.
+                        </p>
+                    </li>
+                    <li>
+                        <a href='https://cremencakes.herokuapp.com' target="_blank">Creme N' Cakes</a>
+                        <p>
+                            It is a simple e-commerce application built with Django<br>
+                            with PayPal payment integrated.
+                        </p>
+                    </li>
+                    <li>
+                        <a href='https://devwrites.herokuapp.com' target="_blank">DevWrites</a>
+                        <p>
+                            Devwrites is a simple blog app built with Flask framework.
+                        </p>
+                    </li>
+                    <li>
+                        <a href='https://www.explore-naija.herokuapp.com/v1/docs/' target="_blank">Explore Naija</a>
+                        <p>
+                            API for Nigerian states and capitals, cities, <br>
+                            towns and tourist centres.
+                        </p>
+                    </li>
+            
+                </ul>
+            </section>
+
+            <section class='experience'>
+                <h1 class='name'>Work Experience</h1>
+                <ul class='list-unstyled-2'>
+                    <li>
+                        <a target="_blank">Web Designer</a>
+                        <br>
+                        <small>Lacruize Design Agency</small>
+                        <p style='font-size: 18px;'>
+                            July 2021 - Present
+                        </p>
+                    </li>
+                    <br>
+                    <br>
+                    <li>
+                        <a target="_blank">Web Developer</a>
+                        <br>
+                        <small>World Humanitarian Organization for Peace and Equity</small>
+                        <p style='font-size: 18px;'>
+                            March 2021 - June 2021
+                        </p>
+                    </li>
+                    
+                </ul>
+            </section>
+
+            <section class='projects'>
+                <h1 class='name'>Education</h1>
+                <ul class='list-unstyled-2'>
+                    <li>
+                        <a target="_blank">University of Lagos</a>
+                        <br>
+                        <small>B.Sc Statistics</small>
+                        <p style='font-size: 18px;'>
+                            September 2022
+                        </p>
+                    </li>
+                    <br>
+                    <br>
+                    <li>
+                        <a target="_blank">Anchor University, Lagos</a>
+                        <br>
+                        <small>A'Levels</small>
+                        <p style='font-size: 18px;'>
+                            June 2019
+                        </p>
+                    </li>
+                    
+                </ul>
+            </section>
+
+            <section class='contact'>
+                <h1 class='name'>Contact Me</h1>
+
+                <form action='/contact/' class='mt-4' method='post'>
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Name</label>
+                        <input type="email" class="form-control form-control-lg" name="name" id="exampleFormControlInput1" placeholder="John Doe">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <input type="email" class="form-control form-control-lg" name="email" id="exampleFormControlInput1" placeholder="example@mail.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Subject</label>
+                        <input type="text" class="form-control form-control-lg" name="subject" id="exampleFormControlInput1" placeholder="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" name="message" rows="4"></textarea>
+                    </div>
+                    <div class='mb-3'>
+                        <button type="submit" class='btn btn-outline-success'>Send Message</button>
+                    </div>
+                </form>
+                
+            </section>
+        </div>
+        <div class='image-box'>
+            <img src="{% static 'images/john.jpg' %}">
+            <center>
+                <a class='btn cv-btn' href='/static/images/SHODIPO JOHN.pdf' target="_blank">Download CV</a>
+            </center>
+        </div>
+    </header>
+</body>
+</html>

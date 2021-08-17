@@ -148,19 +148,19 @@
                     {% csrf_token %}
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Name</label>
-                        <input type="name" class="form-control form-control-lg" name="name" id="exampleFormControlInput1" placeholder="John Doe">
+                        <input required type="name" class="form-control form-control-lg" name="name" id="exampleFormControlInput1" placeholder="John Doe">
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Email</label>
-                        <input type="email" class="form-control form-control-lg" name="email" id="exampleFormControlInput1" placeholder="example@mail.com">
+                        <input required type="email" class="form-control form-control-lg" name="email" id="exampleFormControlInput1" placeholder="example@mail.com">
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Subject</label>
-                        <input type="text" class="form-control form-control-lg" name="subject" id="exampleFormControlInput1" placeholder="">
+                        <input required type="text" class="form-control form-control-lg" name="subject" id="exampleFormControlInput1" placeholder="">
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" name="message" rows="4"></textarea>
+                        <textarea required class="form-control" id="exampleFormControlTextarea1" name="message" rows="4"></textarea>
                     </div>
                     <div class='mb-3'>
                         <button type="submit" class='btn btn-outline-success'>Send Message</button>

@@ -16,6 +16,7 @@ def contact(request):
         note = request.POST["message"]
 
         contact = Contact.objects.create(
+            name=name,
             email=email,
             subject = subject,
             note =  note

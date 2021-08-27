@@ -34,12 +34,12 @@ a {
 }
 
 .image-box img {
-  width: 14em;
-  height: 14em;
+  width: 12em;
+  height: 16em;
   display: block;
   align-self: center;
   margin: auto;
-  border-radius: 7em;
+  border-radius: 100%;
   border: 2px solid #ffffff;
 }
 

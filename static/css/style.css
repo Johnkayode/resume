@@ -1,170 +1,176 @@
-body{
-    overflow-x: hidden;
-    margin: 0;
-    color: #222222;
-    font-family: 'Lora', serif;
+body {
+  overflow-x: hidden;
+  margin: 0;
+  color: #222222;
+  font-family: "Lora", serif;
 }
 
-a{
-    color: #222222;
+a {
+  color: #222222;
 }
 
-.main-section{
-    display: flex;
-    flex-direction: row;
-    height: 100%;
+.main-section {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
 }
 
-.main-box{
-    padding: 80px 20px 80px 20px;
-    flex: 50%;
-    height: 100px;
-    background-color: #FFFFFF;
+.main-box {
+  padding: 80px 20px 80px 20px;
+  flex: 50%;
+  height: 100px;
+  background-color: #ffffff;
 }
 
-.image-box{
-    flex: 50%;
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    padding: 80px 20px;
-    justify-content: center;
-    background-color: #e1d3d5;
+.image-box {
+  flex: 50%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  padding: 100px 50px;
+  justify-content: center;
+  background-color: #e1d3d5;
 }
 
-.image-box img{
-    width: 60%;
-    height: 60%;
-    display: block;
-    align-self: center;
-    margin: auto;
-    border-radius: 50%;
-    border: 2px solid #FFFFFF;
+.image-box img {
+  width: 14em;
+  height: 18em;
+  display: block;
+  align-self: center;
+  margin: auto;
+  border-radius: 100%;
+  border: 2px solid #ffffff;
 }
 
-section{
-    padding: 100px 20px;
+section {
+  padding: 100px 20px;
 }
 
-section:last-child{
-    padding: 150px 20px;
+section:last-child {
+  padding: 150px 20px;
 }
 
-.name{
-    font-size: 60px;
-    padding-bottom: 20px;
+.name {
+  font-size: 60px;
+  padding-bottom: 20px;
 }
-.title{
-    font-size: 30px;
-}
-
-.hero-content{
-    font-size: 20px;
+.title {
+  font-size: 30px;
 }
 
-.cv-btn{
-    margin: 40px 0px 70px 0px;
-    font-size: 18px;
-    border: 2px solid #222222;
-    background-color: transparent;
-    padding: 8px 15px;
-    border-radius: 0px;
+.hero-content {
+  font-size: 20px;
 }
 
-.cv-btn:hover{
-    background-color: #222222;
-    color: #FFFFFF;
+.social-handle-icons {
+  padding: 0.7rem;
 }
 
-.form-control{
-    width: 50%;
+.github-icon,
+.twitter-icon,
+.linkedin-icon {
+  padding: 0.5rem;
+}
+
+.cv-btn {
+  margin: 40px 0px 70px 0px;
+  font-size: 18px;
+  border: 2px solid #111111;
+  background-color: transparent;
+  color: #111111;
+  padding: 8px 15px;
+  border-radius: 0px;
+}
+
+.cv-btn:hover {
+  background-color: #222222;
+  color: #ffffff;
+}
+
+.form-control {
+  width: 50%;
 }
 
 button[type="submit"]:focus,
-.form-control:focus{
-    outline:0 none;
-    border: 1px solid gray;
-    /* box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25); */
-    box-shadow: none;
-    transition: 0.2s ease;
+.form-control:focus {
+  outline: 0 none;
+  border: 1px solid gray;
+  /* box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25); */
+  box-shadow: none;
+  transition: 0.2s ease;
 }
 
-.btn-outline-success{
-    margin-top: 20px;
-    border-radius: 0px;
-    border-color: #222222;
-    color: #222222;
-    padding: 10px 15px;
+.btn-outline-success {
+  margin-top: 20px;
+  border-radius: 0px;
+  border-color: #222222;
+  color: #222222;
+  padding: 10px 15px;
 }
 
-.btn-outline-success:hover{
-    background: #222222;
-    color: #FFFFFF;
+.btn-outline-success:hover {
+  background: #222222;
+  color: #ffffff;
 }
 
-.form-label{
-    font-size: 18px;
+.form-label {
+  font-size: 18px;
 }
 
-.list-unstyled{
-    list-style: none;
-    font-size: 30px;
-    padding: 20px 0;
-    margin: 0;
+.list-unstyled {
+  list-style: none;
+  font-size: 30px;
+  padding: 20px 0;
+  margin: 0;
 }
 
-.list-unstyled-2{
-    list-style: none;
-    padding: 20px 0;
-    margin: 0;
-    font-size: 20px;
+.list-unstyled-2 {
+  list-style: none;
+  padding: 20px 0;
+  margin: 0;
+  font-size: 20px;
 }
 
-.list-unstyled-2 li a{
-    font-weight: 700;
+.list-unstyled-2 li a {
+  font-weight: 700;
 }
 
-
-.about-text{
-    font-size: 30px;
+.about-text {
+  font-size: 30px;
 }
 
 @media only screen and (max-width: 768px) {
-    .main-section{
-        display: flex;
-        flex-direction: column-reverse;
-    }
+  .main-section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 
-    .main-box{
-        padding: 80px 20px 80px 20px;
-        flex: 100%
-    }
-    
-    .image-box{
-        position: relative;
-        flex: 100%;
-        padding: 50px 20px;
-    }
+  .main-box {
+    padding: 80px 20px 80px 20px;
+    flex: 100%;
+  }
 
-    .image-box img{
-        max-width: 100%;
-        width: 60%;
-        height: 40%;
-        
-    }
+  .image-box {
+    position: relative;
+    flex: 100%;
+    padding: 50px 20px;
+  }
 
-    .name{
-        font-size: 45px;
-    }
-    
-    .title{
-        font-size: 25px;
-    }
-    .form-control{
-        width: 100%;
-    }
-    
+  .image-box img {
+    max-width: 100%;
+    width: 60%;
+    height: 40%;
+  }
 
+  .name {
+    font-size: 45px;
+  }
+
+  .title {
+    font-size: 25px;
+  }
+  .form-control {
+    width: 100%;
+  }
 }
-

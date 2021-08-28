@@ -6,6 +6,7 @@ from .models import Contact
 def home(request):
     return render(request, 'index.html')
 
+
 def contact(request):
 
     if request.method == 'POST':
@@ -18,10 +19,9 @@ def contact(request):
         contact = Contact.objects.create(
             name=name,
             email=email,
-            subject = subject,
-            note =  note
+            subject=subject,
+            note=note
         )
         contact.save()
 
     return redirect('home')
-
